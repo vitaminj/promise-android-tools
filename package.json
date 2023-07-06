@@ -9,7 +9,7 @@
     "test": "npx c8 -r text -r html -r lcov --all --src src/ -x \"**/*.spec.*\" -x \"**/__test-helpers\" ava src/*.spec.ts",
     "lint": "npx prettier \"**\" --ignore-path=.gitignore --arrow-parens=avoid --trailing-comma=none --end-of-line=lf -uw",
     "docs": "npx typedoc",
-    "build": "rm -rf lib && npx tsc --build ./tsconfig.build.json"
+    "build": "rimraf -rf lib && npx tsc --build ./tsconfig.build.json"
   },
   "files": [
     "lib",
@@ -55,6 +55,7 @@
     "ava": "^5.0.1",
     "c8": "^7.12.0",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "testdouble": "^3.16.6",
     "ts-node": "^10.9.1",
     "typedoc": "^0.23.19",

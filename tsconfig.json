@@ -11,6 +11,8 @@
     "importHelpers": true,
     "downlevelIteration": true,
 
+    "types": [],
+
     /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": false,
